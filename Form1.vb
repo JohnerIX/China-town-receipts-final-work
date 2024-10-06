@@ -114,6 +114,10 @@ Public Class Form1
         txtSubtotal.Text = subtotal.ToString()
 
     End Sub
+    'Display a unique transaction ID
+    Dim TransactionId As Interger
+TransactionId = Int((100000 - 1 + 1) * Rnd()+1)
+     txtTranctionId.text = TransactionId 
 
     Private Sub btnTax_Click(sender As Object, e As EventArgs) Handles btnTax.Click
         'Calculate tax
